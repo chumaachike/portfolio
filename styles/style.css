@@ -6,7 +6,6 @@ ul {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -23,6 +22,7 @@ h1 {
   letter-spacing: 0.37px;
   color: #ff6b00;
 }
+
 h3 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -31,6 +31,7 @@ h3 {
   line-height: 32px;
   color: #fff5e1;
 }
+
 p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -39,6 +40,7 @@ p {
   line-height: 24px;
   color: #fff;
 }
+
 header,
 nav {
   padding: 0 24px;
@@ -50,6 +52,7 @@ nav {
   display: grid;
   grid-template-columns: auto;
 }
+
 nav {
   background-color: #3c3a39;
   color: #fff;
@@ -65,10 +68,12 @@ header {
   background-position: bottom right;
   height: 590px;
 }
+
 header > ul {
   list-style-type: none;
   align-items: center;
 }
+
 header li {
   margin-right: 10px;
 }
