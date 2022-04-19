@@ -10,13 +10,13 @@ ul {
 }
 
 p {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #091e42;
-  }
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
 
 a {
   text-decoration: none;
@@ -163,7 +163,7 @@ header {
   border: 1px solid #8993a4;
   box-sizing: border-box;
   padding: 10px 12px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -221,7 +221,7 @@ header {
 }
 
 .border-about-me {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #fff;
   margin-top: 201px;
 }
 
@@ -239,7 +239,7 @@ header {
   font-size: 32px;
   line-height: 44px;
   align-items: center;
-  color: #ffffff;
+  color: #fff;
   margin: 0;
 }
 
@@ -254,7 +254,7 @@ header {
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
-  color: #ffffff;
+  color: #fff;
 }
 
 h4.frameworks::marker {
