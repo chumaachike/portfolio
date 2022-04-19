@@ -6,9 +6,17 @@ ul {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
+
+p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091e42;
+  }
 
 a {
   text-decoration: none;
@@ -27,7 +35,7 @@ button {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   height: 48px;
   border: none;
 }
@@ -68,7 +76,7 @@ ul {
 }
 
 .headline-section > p {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -124,7 +132,7 @@ header {
 .works > h2 {
   text-align: center;
   color: #1c1a19;
-  font-family: "Crete Round";
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -142,20 +150,11 @@ header {
 }
 
 .works h3 {
-  font-family: "Crete Round";
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #091e42;
-}
-
-p {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   color: #091e42;
 }
 
@@ -204,7 +203,7 @@ p {
 }
 
 .about-me h2 {
-  font-family: "Crete Round";
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -234,7 +233,7 @@ p {
   display: list-item;
   text-align: center;
   list-style-position: inside;
-  font-family: "InaiMathi";
+  font-family: "InaiMathi", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -250,7 +249,7 @@ p {
 
 .technologies li {
   text-align: center;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
