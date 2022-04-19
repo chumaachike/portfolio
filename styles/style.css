@@ -9,6 +9,11 @@ ul {
   vertical-align: baseline;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .flex {
   display: flex;
 }
@@ -41,8 +46,8 @@ p {
   color: #fff;
 }
 
-header,
-nav {
+.headline-section,
+header {
   padding: 0 24px;
 }
 
@@ -53,7 +58,7 @@ nav {
   grid-template-columns: auto;
 }
 
-nav {
+header {
   background-color: #3c3a39;
   color: #fff;
   display: flex;
@@ -61,7 +66,7 @@ nav {
   align-items: center;
 }
 
-header {
+.headline-section {
   background-color: #1c1a19;
   background-image: url("../images/illustration-header-mobile.png");
   background-repeat: no-repeat;
@@ -69,11 +74,11 @@ header {
   height: 590px;
 }
 
-header > ul {
+.headline-section > ul {
   list-style-type: none;
   align-items: center;
 }
 
-header li {
+.headline-section li {
   margin-right: 10px;
 }
