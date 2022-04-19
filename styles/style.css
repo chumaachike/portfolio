@@ -1,0 +1,84 @@
+html,
+body,
+div,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.headline-section,
+header {
+  padding: 0 24px;
+}
+
+.container-full {
+  width: 375px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+header {
+  background-color: #3c3a39;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headline-section {
+  background-color: #1c1a19;
+  background-image: url("../images/illustration-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  height: 590px;
+}
+
+.headline-section > ul {
+  list-style-type: none;
+  align-items: center;
+}
+
+.headline-section li {
+  margin-right: 10px;
+}
