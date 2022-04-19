@@ -41,7 +41,7 @@ button {
 }
 
 button:hover {
-  background-color: #e5e5e5;
+  background-color: #fff5e1;
 }
 
 button:active {
@@ -194,9 +194,12 @@ header {
   width: 100%;
 }
 
-.about-me {
+.about-section {
   background-color: #1c1a19;
   margin-top: 120px;
+}
+
+.about-me {
   background-image: url("../images/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -226,13 +229,16 @@ header {
 }
 
 .technologies {
-  background-color: #1c1a19;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0;
 }
 
 .technologies h4 {
   display: list-item;
   text-align: center;
-  list-style-position: inside;
+  list-style-position:center;
   font-family: "InaiMathi", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -240,7 +246,6 @@ header {
   line-height: 44px;
   align-items: center;
   color: #fff;
-  margin: 0;
 }
 
 .technologies h4::marker {
@@ -257,14 +262,15 @@ header {
   color: #fff;
 }
 
-h4.frameworks::marker {
-  content: "\25AA";
+h4.frameworkss::marker {
+  content: "\25AA   ";
+  margin-right: 10px;
 }
 
-h4.language::marker {
-  content: "\2666";
+h4.languages::marker {
+  content: "\2666   ";
 }
 
-h4.skills::marker {
-  content: "\25cf";
+h4.skillss::marker {
+  content: "\25cf   ";
 }
