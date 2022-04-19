@@ -9,6 +9,15 @@ ul {
   vertical-align: baseline;
 }
 
+p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -16,6 +25,32 @@ a {
 
 .flex {
   display: flex;
+}
+
+button {
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  height: 48px;
+  border: none;
+}
+
+button:hover {
+  background-color: #fff5e1;
+  color: #ff5800;
+}
+
+button:active {
+  background-color: #e05304;
+}
+
+button:disabled {
+  background-color: #f4f1f0;
 }
 
 h1 {
@@ -28,7 +63,11 @@ h1 {
   color: #ff6b00;
 }
 
-h3 {
+ul {
+  list-style-type: none;
+}
+
+.headline-section > h3 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -37,7 +76,7 @@ h3 {
   color: #fff5e1;
 }
 
-p {
+.headline-section > p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -47,7 +86,11 @@ p {
 }
 
 .headline-section,
-header {
+header,
+.works,
+.about-me,
+.technologies,
+.contact-page {
   padding: 0 24px;
 }
 
@@ -75,10 +118,159 @@ header {
 }
 
 .headline-section > ul {
-  list-style-type: none;
   align-items: center;
 }
 
 .headline-section li {
   margin-right: 10px;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.works > h2 {
+  text-align: center;
+  color: #1c1a19;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.border-works {
+  border-bottom: 1px solid #212121;
+}
+
+.main-image {
+  background-image: url("../images/ImgPlaceholder.png");
+  height: 237px;
+  margin-top: 80px;
+}
+
+.works h3 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.works li {
+  margin: 12px 12px 12px 0;
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.works > button {
+  width: 124px;
+}
+
+.item {
+  background-image: url("../images/papd.png");
+  margin-top: 24px;
+}
+
+.item > h3,
+.item > p,
+.item > ul {
+  color: #fff;
+  margin: 12px;
+}
+
+.item li {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.item > button {
+  width: 100%;
+}
+
+.about-section {
+  background-color: #1c1a19;
+  margin-top: 120px;
+}
+
+.about-me {
+  background-image: url("../images/illustration-about-me-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.about-me h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.about-me > p {
+  color: #fff;
+}
+
+.about-me button {
+  width: 161px;
+}
+
+.border-about-me {
+  border-bottom: 1px solid #fff;
+  margin-top: 201px;
+}
+
+.technologies {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0;
+}
+
+.technologies h4 {
+  display: list-item;
+  text-align: center;
+  font-family: "InaiMathi", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: center;
+  color: #fff;
+}
+
+.technologies h4::marker {
+  color: #ff6b00;
+}
+
+.technologies li {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+}
+
+h4.frameworkss::marker {
+  content: "\25AA   ";
+  margin-right: 10px;
+}
+
+h4.languages::marker {
+  content: "\2666   ";
+}
+
+h4.skillss::marker {
+  content: "\25cf   ";
 }
