@@ -33,16 +33,16 @@ button {
 }
 
 button:hover {
-    background-color: #e5e5e5;
-  }
-  
-  button:active {
-    background-color: #e05304;
-  }
+  background-color: #e5e5e5;
+}
 
-  button:disabled {
-      background-color: #F4F1F0;
-  }
+button:active {
+  background-color: #e05304;
+}
+
+button:disabled {
+  background-color: #f4f1f0;
+}
 
 h1 {
   font-family: "Crete Round", serif;
