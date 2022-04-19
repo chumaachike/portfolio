@@ -238,7 +238,6 @@ header {
 .technologies h4 {
   display: list-item;
   text-align: center;
-  list-style-position: center;
   font-family: "InaiMathi", sans-serif;
   font-style: normal;
   font-weight: 700;
