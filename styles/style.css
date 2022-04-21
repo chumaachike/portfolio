@@ -274,3 +274,71 @@ h4.languages::marker {
 h4.skillss::marker {
   content: "\25cf   ";
 }
+
+.contact-page h3 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172B4D;
+  }
+  
+.form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .form *{
+      margin: 12px 0;
+  }
+  
+  .contact-page input {
+      
+      border: none;width: 100%;
+    border-bottom: 1px solid #dbd8d7;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 14px 0;
+  }
+  
+  .contact-page textarea {
+      width: 100%;
+      border: none;
+      background-color: #fbf8f7;
+      padding: 12px;
+      height: 114px;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+  }
+  
+  .form button {
+      justify-content: center;
+  }
+
+  .border-butom {
+    width: 134px;
+    border-bottom: 2px #0d151e solid;
+    border-radius: 10px;
+    margin: 12px auto;
+    align-self: center;
+  }
+  footer li {
+    margin-right: 2px;
+    color: #505f79;
+  }
+  footer ul {
+    border-top: 2px solid #dfe1e6;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+  }
+    
