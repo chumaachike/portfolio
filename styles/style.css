@@ -297,7 +297,7 @@ h4.skillss::marker {
   
   .contact-page input {
       
-      border: none;width: 100%;
+    border: none;width: 100%;
     border-bottom: 1px solid #dbd8d7;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -331,6 +331,10 @@ h4.skillss::marker {
     margin: 12px auto;
     align-self: center;
   }
+  footer {
+    margin-top: 120px;
+  }
+
   footer li {
     margin-right: 2px;
     color: #505f79;
