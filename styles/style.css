@@ -121,6 +121,7 @@ footer li {
   margin-right: 2px;
   color: #505f79;
 }
+
 footer ul {
   border-top: 2px solid #dfe1e6;
   list-style-type: none;
@@ -341,9 +342,9 @@ h4.skillss::marker {
   border-radius: 10px;
   margin: 12px auto;
   align-self: center;
+  
 }
+
 footer {
   margin-top: 120px;
 }
-
-
