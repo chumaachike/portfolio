@@ -117,6 +117,17 @@ header {
   height: 590px;
 }
 
+footer li {
+  margin-right: 2px;
+  color: #505f79;
+}
+footer ul {
+  border-top: 2px solid #dfe1e6;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
 .headline-section > ul {
   align-items: center;
 }
@@ -335,13 +346,4 @@ footer {
   margin-top: 120px;
 }
 
-footer li {
-  margin-right: 2px;
-  color: #505f79;
-}
-footer ul {
-  border-top: 2px solid #dfe1e6;
-  list-style-type: none;
-  justify-content: center;
-  align-items: center;
-}
+
