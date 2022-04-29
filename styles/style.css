@@ -95,7 +95,6 @@ header,
 }
 
 .container-full {
-  width: 375px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto;
@@ -159,6 +158,7 @@ footer ul {
 
 .main-image {
   background-image: url("../images/ImgPlaceholder.png");
+  background-repeat: no-repeat;
   height: 237px;
   margin-top: 80px;
 }
