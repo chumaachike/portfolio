@@ -67,7 +67,7 @@ ul {
   list-style-type: none;
 }
 
-.headline-section > h3 {
+.headline-section h3 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -76,7 +76,7 @@ ul {
   color: #fff5e1;
 }
 
-.headline-section > p {
+.headline-section p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -95,7 +95,6 @@ header,
 }
 
 .container-full {
-  width: 375px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto;
@@ -115,6 +114,7 @@ header {
   background-repeat: no-repeat;
   background-position: bottom right;
   height: 590px;
+  flex-direction: column;
 }
 
 footer li {
@@ -142,7 +142,7 @@ footer ul {
   grid-template-columns: auto;
 }
 
-.works > h2 {
+.works h2 {
   text-align: center;
   color: #1c1a19;
   font-family: "Crete Round", sans-serif;
@@ -152,12 +152,13 @@ footer ul {
   line-height: 52px;
 }
 
-.border-works {
-  border-bottom: 1px solid #212121;
+.border-works hr {
+  border: 1px solid #212121;
 }
 
 .main-image {
   background-image: url("../images/ImgPlaceholder.png");
+  background-repeat: no-repeat;
   height: 237px;
   margin-top: 80px;
 }
@@ -287,6 +288,10 @@ h4.skillss::marker {
   content: "\25cf   ";
 }
 
+.contact-page {
+  flex-direction: column;
+}
+
 .contact-page h3 {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -301,6 +306,7 @@ h4.skillss::marker {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .form * {
@@ -337,13 +343,173 @@ h4.skillss::marker {
 }
 
 .border-butom {
-  width: 134px;
+  width: 50%;
   border-bottom: 2px #0d151e solid;
   border-radius: 10px;
   margin: 12px auto;
   align-self: center;
 }
 
+input[name="user_fullname"] {
+  display: block;
+}
+
+input[name="first_name"],
+input[name="last_name"] {
+  display: none;
+}
+
+.full-name {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
 footer {
   margin-top: 120px;
+}
+
+.mobile {
+  display: contents;
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container-full {
+    width: 100%;
+    margin: 0;
+  }
+
+  header,
+  .works,
+  .about-me,
+  .technologies,
+  .contact-page {
+    padding: 0 156px;
+  }
+
+  nav li {
+    margin-right: 32px;
+    padding: 26px 0;
+  }
+
+  .headline-section {
+    background-image: url("../images/Illustration-header.png");
+    background-position: right;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .headline-section ul {
+    flex-direction: column;
+  }
+
+  .pitch {
+    width: 35vw;
+    padding-left: 82px;
+  }
+
+  .works {
+    grid-template-columns: auto auto auto;
+    column-gap: 24px;
+  }
+
+  .heading-works,
+  .main {
+    grid-column: 1/4;
+  }
+
+  .item button {
+    display: none;
+  }
+
+  .border-works {
+    margin: auto 0;
+  }
+
+  .heading-works {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .about-me {
+    background-image: url("../images/Group.png");
+    background-position: right;
+  }
+
+  .about-me > h2,
+  .about-me > p {
+    width: 35vw;
+  }
+
+  .technologies {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .contact-page {
+    flex-direction: row;
+  }
+
+  .contact-page h3 {
+    width: 40vw;
+    margin-right: 24px;
+    text-align: start;
+  }
+
+  .main-image {
+    float: left;
+    width: 50%;
+    background-repeat: no-repeat;
+    margin-top: 32px;
+  }
+
+  .pit {
+    float: right;
+    width: 50%;
+  }
+
+  .item:hover {
+    background-image: url("../images/portfhover.png");
+    position: relative;
+  }
+
+  .item:hover ul,
+  .item:hover p,
+  .item:hover h3 {
+    display: none;
+  }
+
+  .item:hover > .btn-works {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+
+  input[name="user_fullname"] {
+    display: none;
+  }
+
+  input[name="first_name"],
+  input[name="last_name"] {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: contents;
+  }
+
+  .border-butom {
+    display: none;
+  }
 }
