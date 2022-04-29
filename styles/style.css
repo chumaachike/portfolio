@@ -338,10 +338,6 @@ h4.skillss::marker {
   line-height: 24px;
 }
 
-.contact-page {
-  flex-direction: column;
-}
-
 .form button {
   justify-content: center;
 }
