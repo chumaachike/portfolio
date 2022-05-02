@@ -11,7 +11,7 @@
 
 ## Live Demo 
 
-N/A
+[Portfolio live demo](https://chumaachike.github.io/portfolio/)
 
 
 
