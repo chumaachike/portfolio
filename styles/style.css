@@ -49,7 +49,7 @@ button:hover {
 button:active {
   background-color: #e05304;
   border: 2px solid #ff6b00;
-  color: #F4F1F0;;
+  color: #f4f1f0;
 }
 
 button:disabled {
