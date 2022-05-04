@@ -43,10 +43,13 @@ button {
 button:hover {
   background-color: #fff5e1;
   color: #ff5800;
+  border: 2px solid #ff6b00;
 }
 
 button:active {
   background-color: #e05304;
+  border: 2px solid #ff6b00;
+  color: #f4f1f0;
 }
 
 button:disabled {
