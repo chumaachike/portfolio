@@ -56,6 +56,7 @@ button:disabled {
   background-color: #f4f1f0;
 }
 
+
 h1 {
   font-family: "Crete Round", serif;
   font-style: normal;
@@ -381,6 +382,16 @@ footer {
   display: none;
 }
 
+.vvv {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 100vw;
+  width: 100vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
 @media screen and (min-width: 768px) {
   .container-full {
     width: 100%;
@@ -509,10 +520,16 @@ footer {
   }
 
   .desktop {
-    display: contents;
+    display: inline-flex;
   }
 
   .border-butom {
     display: none;
+  }
+  .vvv{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    
   }
 }
