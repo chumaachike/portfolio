@@ -1,8 +1,10 @@
 const hamburger = document.getElementById("hambuger")
 const hhh = document.getElementById("nav-list")
+const header = document.getElementById("header-1")
 
-hamburger.addEventListener("click", function(event){
+function toggleMenu() {
     hhh.classList.toggle('vvv')
-    console.log(hhh) 
+    header.classList.toggle('hide-logo')
+}
 
-})
+hamburger.addEventListener("click", toggleMenu);
