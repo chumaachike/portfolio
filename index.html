@@ -17,23 +17,30 @@
   <body>
     <div class="container-full">
       <header>
-        <a href="#home">Chuma</a>
-        <nav>
-          <ul class="flex">
-            <li>
-              <a href="#" class="mobile"
-                ><img src="images/hamburger.png" alt="Hambuger Icon"
-              /></a>
+        <nav class="navbar">
+          <a href="#home" class="nav-branding">Chuma</a>
+
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
             </li>
-            <li><a href="#portfolio" class="desktop">Portfolio</a></li>
-            <li><a href="#about" class="desktop">About</a></li>
-            <li><a href="#contact" class="desktop">Contact</a></li>
-            <li>
-              <a href="#contact" class="desktop"
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item opa">
+              <a href="#" class="nav-link"
                 ><img src="images/Icon-Mail.png" alt="mail icon"
               /></a>
             </li>
           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
       </header>
       <section class="headline-section flex" id="home">
@@ -47,11 +54,21 @@
           </p>
         </div>
         <ul class="flex">
-          <li><a href="#"><img src="images/mouse.png" alt="git-icon" /></a></li>
-          <li><a href="#"><img src="images/linkden.png" alt="linkden-icon" /></a></li>
-          <li><a href="#"><img src="images/fingers.png" alt="angelist-icon" /></a></li>
-          <li><a href="#"><img src="images/twitter.png" alt="twitter-icon" /></a></li>
-          <li><a href="#"><img src="images/M-shape.png" alt="medium-icon" /></a></li>
+          <li>
+            <a href="#"><img src="images/mouse.png" alt="git-icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/linkden.png" alt="linkden-icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/fingers.png" alt="angelist-icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/twitter.png" alt="twitter-icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/M-shape.png" alt="medium-icon" /></a>
+          </li>
         </ul>
       </section>
       <section class="works" id="portfolio">
@@ -254,9 +271,7 @@ Enter text here</textarea
       <footer>
         <ul class="flex">
           <li>
-            <a href="#"
-              ><img src="images/mouse-black.png" alt="git-icon"
-            /></a>
+            <a href="#"><img src="images/mouse-black.png" alt="git-icon" /></a>
           </li>
           <li>
             <a href="#"><img src="images/Disabled.png" alt="linkden-icon" /></a>
@@ -276,5 +291,6 @@ Enter text here</textarea
         <div class="border-butom"></div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
