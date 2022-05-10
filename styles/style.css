@@ -56,7 +56,6 @@ button:disabled {
   background-color: #f4f1f0;
 }
 
-
 h1 {
   font-family: "Crete Round", serif;
   font-style: normal;
@@ -69,6 +68,25 @@ h1 {
 
 ul {
   list-style-type: none;
+}
+
+header {
+  background-color: #3e3c3c;
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-branding {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .headline-section h3 {
@@ -90,11 +108,11 @@ ul {
 }
 
 .headline-section,
-header,
 .works,
 .about-me,
 .technologies,
-.contact-page {
+.contact-page,
+.navbar {
   padding: 0 24px;
 }
 
@@ -104,14 +122,6 @@ header,
   grid-template-columns: auto;
 }
 
-header {
-  background-color: #3c3a39;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .headline-section {
   background-color: #1c1a19;
   background-image: url("../images/illustration-header-mobile.png");
@@ -119,6 +129,66 @@ header {
   background-position: bottom right;
   height: 590px;
   flex-direction: column;
+}
+
+.hamburger {
+  display: block;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #67798E;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #67798E;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  width: 100%;
+  text-align: left;
+  transition: 0.3s;
+  background-color: #3e3c3c;
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  left: 0;
+
+  height: 100vh;
+}
+
+.nav-menu.active li {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 15px 24px;
+  border-bottom: 2px solid #6f6c6b;
+  overflow: hidden;
 }
 
 footer li {
@@ -382,35 +452,46 @@ footer {
   display: none;
 }
 
-.vvv {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  height: 100vw;
-  width: 100vw;
-  margin-left: 5%;
-  margin-right: 5%;
-  
+.opacity {
+  opacity: 0;
 }
+
 @media screen and (min-width: 768px) {
   .container-full {
     width: 100%;
     margin: 0;
   }
 
-  header,
   .works,
   .about-me,
   .technologies,
-  .contact-page {
+  .contact-page,
+  .navbar {
     padding: 0 156px;
   }
-
-  nav li {
-    margin-right: 32px;
-    padding: 26px 0;
+  .opacity {
+    opacity: 100;
+  }
+  .hamburger {
+    display: none;
+    cursor: pointer;
   }
 
+  .nav-branding {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    position: static;
+  }
   .headline-section {
     background-image: url("../images/Illustration-header.png");
     background-position: right;
@@ -520,16 +601,10 @@ footer {
   }
 
   .desktop {
-    display: inline-flex;
+    display: contents;
   }
 
   .border-butom {
     display: none;
-  }
-  .vvv{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    
   }
 }
