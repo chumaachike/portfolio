@@ -15,4 +15,4 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
   branding.classList.remove('opacity');
   xxx.classList.remove('opacity');
-  }));
+}));
