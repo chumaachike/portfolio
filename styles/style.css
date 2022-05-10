@@ -83,7 +83,7 @@ header {
 }
 
 .nav-branding {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -177,7 +177,6 @@ header {
 
 .nav-menu.active {
   left: 0;
-
   height: 100vh;
 }
 
@@ -340,7 +339,7 @@ footer ul {
 }
 
 .nav-menu.active li {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -480,7 +479,7 @@ footer {
   }
 
   .nav-branding {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
