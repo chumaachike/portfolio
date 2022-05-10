@@ -8,6 +8,13 @@ hamburger.addEventListener("click", ()=>{
     navMenu.classList.toggle("active");
     branding.classList.toggle("opacity");
     xxx.classList.toggle("opacity");
+    if (!hamburger.classList.contains("active")) {
+        // Disable scroll
+        body.style.overflow = "hidden";
+    } else {
+        // Enable scroll
+        body.style.overflow = "auto";
+    }
     })
 
 document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click", ()=>{
@@ -15,5 +22,7 @@ document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click", ()
     navMenu.classList.remove("active");
     branding.classList.remove("opacity");
     xxx.classList.remove("opacity");
+    body.style.overflow = "auto";
+
 }))
 
