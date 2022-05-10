@@ -73,6 +73,7 @@ ul {
 header {
   background-color: #3e3c3c;
 }
+
 .navbar {
   min-height: 70px;
   display: flex;
@@ -202,7 +203,7 @@ footer ul {
   align-items: center;
 }
 
-.headline-section > ul {
+.headline-section>ul {
   align-items: center;
 }
 
@@ -257,7 +258,7 @@ footer ul {
   line-height: 20px;
 }
 
-.works > button {
+.works>button {
   width: 124px;
 }
 
@@ -266,9 +267,9 @@ footer ul {
   margin-top: 24px;
 }
 
-.item > h3,
-.item > p,
-.item > ul {
+.item>h3,
+.item>p,
+.item>ul {
   color: #fff;
   margin: 12px;
 }
@@ -277,7 +278,7 @@ footer ul {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
-.item > button {
+.item>button {
   width: 100%;
 }
 
@@ -302,7 +303,7 @@ footer ul {
   color: #ff6b00;
 }
 
-.about-me > p {
+.about-me>p {
   color: #fff;
 }
 
@@ -468,9 +469,11 @@ footer {
   .navbar {
     padding: 0 156px;
   }
+
   .opacity {
     opacity: 100;
   }
+
   .hamburger {
     display: none;
     cursor: pointer;
@@ -491,6 +494,7 @@ footer {
     gap: 24px;
     position: static;
   }
+
   .headline-section {
     background-image: url("../images/Illustration-header.png");
     background-position: right;
@@ -536,8 +540,8 @@ footer {
     background-position: right;
   }
 
-  .about-me > h2,
-  .about-me > p {
+  .about-me>h2,
+  .about-me>p {
     width: 35vw;
   }
 
@@ -580,7 +584,7 @@ footer {
     display: none;
   }
 
-  .item:hover > .btn-works {
+  .item:hover>.btn-works {
     display: block;
     position: absolute;
     bottom: 0;
