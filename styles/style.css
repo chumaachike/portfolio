@@ -348,6 +348,10 @@ footer ul {
   border-bottom: 2px solid #6f6c6b;
 }
 
+.nav-menu.active li a {
+  color: #fff5e1;
+}
+
 h4.frameworkss::marker {
   content: "\25AA   ";
   margin-right: 10px;
