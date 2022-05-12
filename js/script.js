@@ -1,4 +1,4 @@
-//declaring the variables
+// declaring the variables
 
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -6,7 +6,7 @@ const branding = document.querySelector('.nav-branding');
 const xxx = document.querySelector('.opa');
 const workSection = document.getElementById('portfolio');
 
-//creating elements
+// creating elements
 
 const modal = document.createElement('div');
 const modalHeader = document.createElement('div');
@@ -21,7 +21,7 @@ const imgTag = document.createElement('img');
 const liveBtn = document.createElement('button');
 const modalFooter = document.createElement('div');
 
-//modal data
+// modal data
 
 const projects = [
   {
@@ -96,7 +96,7 @@ const projects = [
   },
 ];
 
-//adding classes to modal
+// adding classes to modal
 
 modal.classList.add('modal');
 modalHeader.classList.add('modal-header');
@@ -178,6 +178,7 @@ for (
   projectNumber < projects.length - 1;
   projectNumber += 1
 ) {
+  
   // Creating new HTML elements
 
   const itemDiv = document.createElement('div');
@@ -194,15 +195,12 @@ for (
   itemBtn.classList.add('btn-works');
   itemBtn.classList.add(`${projectNumber}`);
 
-  // Appending elements
-
   workSection.appendChild(itemDiv);
   itemDiv.appendChild(itemTitle);
   itemDiv.appendChild(itemDescription);
   itemDiv.appendChild(itemUl);
   itemDiv.appendChild(itemBtn);
 
-  // Adding technologies to the UL
 
   function openModal(modal) {
     if (modal == null) return;
