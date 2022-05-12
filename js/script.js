@@ -1,4 +1,5 @@
 //declaring the variables
+
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const branding = document.querySelector('.nav-branding');
@@ -6,6 +7,7 @@ const xxx = document.querySelector('.opa');
 const workSection = document.getElementById('portfolio');
 
 //creating elements
+
 const modal = document.createElement('div');
 const modalHeader = document.createElement('div');
 const modalBody = document.createElement('div');
@@ -20,6 +22,7 @@ const liveBtn = document.createElement('button');
 const modalFooter = document.createElement('div');
 
 //modal data
+
 const projects = [
   {
     cardName: 'card-1',
@@ -94,6 +97,7 @@ const projects = [
 ];
 
 //adding classes to modal
+
 modal.classList.add('modal');
 modalHeader.classList.add('modal-header');
 modalBody.classList.add('modal-body');
@@ -105,7 +109,6 @@ ulModal.classList.add('flex');
 modalFooter.classList.add('flex');
 modalFooter.classList.add('modal-footer');
 
-//
 document.body.appendChild(modal);
 modal.appendChild(modalHeader);
 modal.appendChild(ulModal);
@@ -176,6 +179,7 @@ for (
   projectNumber += 1
 ) {
   // Creating new HTML elements
+
   const itemDiv = document.createElement('div');
   const itemTitle = document.createElement('h3');
   const itemDescription = document.createElement('p');
@@ -184,12 +188,14 @@ for (
   itemBtn.type = 'submit';
 
   // Giving classes to elements
+
   itemDiv.classList.add('item');
   itemUl.classList.add('flex');
   itemBtn.classList.add('btn-works');
   itemBtn.classList.add(`${projectNumber}`);
 
   // Appending elements
+
   workSection.appendChild(itemDiv);
   itemDiv.appendChild(itemTitle);
   itemDiv.appendChild(itemDescription);
@@ -197,6 +203,20 @@ for (
   itemDiv.appendChild(itemBtn);
 
   // Adding technologies to the UL
+
+  function openModal(modal) {
+    if (modal == null) return;
+    modal.classList.add('active');
+    overlay.classList.add('active');
+  }
+  
+  function closeModal(modal) {
+    if (modal == null) return;
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+  }
+  
+  
   for (let i = 0; i < projects[projectNumber].technologies.length; i += 1) {
     const listItem = document.createElement('li');
     listItem.innerHTML = projects[projectNumber].technologies[i];
@@ -204,6 +224,7 @@ for (
   }
 
   // Filling the elements information
+
   itemTitle.innerHTML = projects[projectNumber].name;
   itemDescription.innerHTML = projects[projectNumber].description;
   itemBtn.innerHTML = 'See Project';
@@ -229,14 +250,14 @@ document.querySelectorAll('.btn-works').forEach((n) =>
   n.addEventListener('click', () => {
     const classes = n.className.split(' ');
     const juj = Number(classes[1]);
-    modalTitle.innerHTML = projects[juj]['name'];
-    modalDes.innerHTML = projects[juj]['description'];
-    imgTag.src = projects[juj]['featuredImage'];
+    modalTitle.innerHTML = projects[juj].name;
+    modalDes.innerHTML = projects[juj].description;
+    imgTag.src = projects[juj].featuredImage;
     ulModal.innerHTML = '';
     closeBtn.innerHTML = '&times;';
     sourceBtn.innerHTML = `See Source`;
     liveBtn.innerHTML = 'See Live';
-    projects[juj]['technologies'].forEach((tech) => {
+    projects[juj].technologies.forEach((tech) => {
       const modalLi = document.createElement('li');
       modalLi.innerHTML = tech;
       ulModal.appendChild(modalLi);
@@ -250,21 +271,9 @@ overlay.addEventListener('click', () => {
   modals.forEach((modal) => {
     closeModal(modal);
   });
-  console.log(modals);
 });
 closeBtn.addEventListener('click', () => {
   const modal = closeBtn.closest('.modal');
   closeModal(modal);
 });
 
-function openModal(modal) {
-  if (modal == null) return;
-  modal.classList.add('active');
-  overlay.classList.add('active');
-}
-
-function closeModal(modal) {
-  if (modal == null) return;
-  modal.classList.remove('active');
-  overlay.classList.remove('active');
-}
