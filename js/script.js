@@ -22,7 +22,7 @@ const modalFooter = document.createElement("div");
 //modal data
 const projects = [
   {
-    cardName: 'card-1',
+    cardName: "card-1",
     name: "Profesional Art Printing Data",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!",
@@ -32,7 +32,7 @@ const projects = [
     sourceVersion: "https://github.com/chumaachike/portfolio/",
   },
   {
-    cardName: 'card-2',
+    cardName: "card-2",
     name: "Profesional Art Printing Data",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!",
@@ -42,7 +42,7 @@ const projects = [
     sourceVersion: "https://github.com/chumaachike/portfolio/",
   },
   {
-    cardName: 'card-3',
+    cardName: "card-3",
     name: "Profesional Art Printing Data",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!",
@@ -52,7 +52,7 @@ const projects = [
     sourceVersion: "https://github.com/chumaachike/portfolio/",
   },
   {
-    cardName: 'card-4',
+    cardName: "card-4",
     name: "Profesional Art Printing Data",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!",
@@ -62,7 +62,7 @@ const projects = [
     sourceVersion: "https://github.com/chumaachike/portfolio/",
   },
   {
-    cardName: 'card-5',
+    cardName: "card-5",
     name: "Profesional Art Printing Data",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!",
@@ -72,21 +72,21 @@ const projects = [
     sourceVersion: "https://github.com/chumaachike/portfolio/",
   },
   {
-    cardName: 'card-6',
+    cardName: "card-6",
     name: "Profesional Art Printing Data",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!",
-    technologies: [ "html", "bootstrap", "Ruby"],
+    technologies: ["html", "bootstrap", "Ruby"],
     featuredImage: "../images/ImgPlaceholder.png",
     liveVersion: "https://chumaachike.github.io/portfolio/",
     sourceVersion: "https://github.com/chumaachike/portfolio/",
   },
   {
-    cardName: 'card-7',
+    cardName: "card-7",
     name: "Multi-Post Stories",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!",
-    technologies: ["css","html", "bootstrap", "Ruby"],
+    technologies: ["css", "html", "bootstrap", "Ruby"],
     featuredImage: "../images/ImgPlaceholder.png",
     liveVersion: "https://chumaachike.github.io/portfolio/",
     sourceVersion: "https://github.com/chumaachike/portfolio/",
@@ -105,7 +105,6 @@ ulModal.classList.add("flex");
 modalFooter.classList.add("flex");
 modalFooter.classList.add("modal-footer");
 
-
 //
 document.body.appendChild(modal);
 modal.appendChild(modalHeader);
@@ -121,89 +120,85 @@ modal.appendChild(modalFooter);
 modalFooter.appendChild(sourceBtn);
 modalFooter.appendChild(liveBtn);
 
-
-const headingWorks = document.createElement('div');
-const titleworkss = document.createElement('h2');
-const boderworks = document.createElement('div');
-const horizontalLine = document.createElement('hr');
-const main = document.createElement('div');
-const mainimage = document.createElement('div');
-const pit = document.createElement('div');
-const htitle = document.createElement('h3')
-const desc = document.createElement('p')
-const ulhead = document.createElement('ul')
-const btnhead = document.createElement('button')
-const sourceImg = document.createElement('img');
-const liveImg = document.createElement('img');
-btnhead.type = 'submit'
+const headingWorks = document.createElement("div");
+const titleworkss = document.createElement("h2");
+const boderworks = document.createElement("div");
+const horizontalLine = document.createElement("hr");
+const main = document.createElement("div");
+const mainimage = document.createElement("div");
+const pit = document.createElement("div");
+const htitle = document.createElement("h3");
+const desc = document.createElement("p");
+const ulhead = document.createElement("ul");
+const btnhead = document.createElement("button");
+const sourceImg = document.createElement("img");
+const liveImg = document.createElement("img");
+btnhead.type = "submit";
 
 workSection.appendChild(headingWorks);
 headingWorks.appendChild(titleworkss);
-headingWorks.appendChild(boderworks)
-boderworks.appendChild(horizontalLine)
+headingWorks.appendChild(boderworks);
+boderworks.appendChild(horizontalLine);
 workSection.appendChild(main);
 main.appendChild(mainimage);
 main.appendChild(pit);
 pit.appendChild(htitle);
-pit.appendChild(desc)
-pit.appendChild(ulhead)
-pit.appendChild(btnhead)
+pit.appendChild(desc);
+pit.appendChild(ulhead);
+pit.appendChild(btnhead);
 liveBtn.appendChild(liveImg);
 sourceBtn.appendChild(sourceImg);
 
-
-headingWorks.classList.add('heading-works');
-boderworks.classList.add('border-works');
-main.classList.add('main')
-mainimage.classList.add('main-image')
-pit.classList.add('pit')
-ulhead.classList.add('flex')
-btnhead.classList.add('btn-works');
+headingWorks.classList.add("heading-works");
+boderworks.classList.add("border-works");
+main.classList.add("main");
+mainimage.classList.add("main-image");
+pit.classList.add("pit");
+ulhead.classList.add("flex");
+btnhead.classList.add("btn-works");
 btnhead.classList.add(`${6}`);
 
-
-titleworkss.innerHTML = 'My Recent works';
+titleworkss.innerHTML = "My Recent works";
 htitle.innerHTML = projects[6].name;
 desc.innerHTML = projects[6].description;
 
 for (let i = 0; i < projects[6].technologies.length; i += 1) {
-  const listItem = document.createElement('li');
+  const listItem = document.createElement("li");
   listItem.innerHTML = projects[6].technologies[i];
   ulhead.appendChild(listItem);
 }
 
-btnhead.innerHTML = 'Submit'
+btnhead.innerHTML = "Submit";
 
-
-
-
-for (let projectNumber = 0; projectNumber < (projects.length-1); projectNumber += 1) {
+for (
+  let projectNumber = 0;
+  projectNumber < projects.length - 1;
+  projectNumber += 1
+) {
   // Creating new HTML elements
-  const itemDiv = document.createElement('div')
-  const itemTitle = document.createElement('h3');
-  const itemDescription = document.createElement('p');
-  const itemUl = document.createElement('ul');
-  const itemBtn = document.createElement('button');
-  itemBtn.type = 'submit';
+  const itemDiv = document.createElement("div");
+  const itemTitle = document.createElement("h3");
+  const itemDescription = document.createElement("p");
+  const itemUl = document.createElement("ul");
+  const itemBtn = document.createElement("button");
+  itemBtn.type = "submit";
 
   // Giving classes to elements
-  itemDiv.classList.add('item');
-  itemUl.classList.add('flex');
-  itemBtn.classList.add('btn-works');
-  itemBtn.classList.add(`${projectNumber}`)
-  
-  // Appending elements
- workSection.appendChild(itemDiv);
- itemDiv.appendChild(itemTitle)
- itemDiv.appendChild(itemDescription)
- itemDiv.appendChild(itemUl)
- itemDiv.appendChild(itemBtn)
+  itemDiv.classList.add("item");
+  itemUl.classList.add("flex");
+  itemBtn.classList.add("btn-works");
+  itemBtn.classList.add(`${projectNumber}`);
 
- 
+  // Appending elements
+  workSection.appendChild(itemDiv);
+  itemDiv.appendChild(itemTitle);
+  itemDiv.appendChild(itemDescription);
+  itemDiv.appendChild(itemUl);
+  itemDiv.appendChild(itemBtn);
 
   // Adding technologies to the UL
   for (let i = 0; i < projects[projectNumber].technologies.length; i += 1) {
-    const listItem = document.createElement('li');
+    const listItem = document.createElement("li");
     listItem.innerHTML = projects[projectNumber].technologies[i];
     itemUl.appendChild(listItem);
   }
@@ -211,8 +206,7 @@ for (let projectNumber = 0; projectNumber < (projects.length-1); projectNumber +
   // Filling the elements information
   itemTitle.innerHTML = projects[projectNumber].name;
   itemDescription.innerHTML = projects[projectNumber].description;
-  itemBtn.innerHTML = 'See Project';
-  
+  itemBtn.innerHTML = "See Project";
 }
 
 hamburger.addEventListener("click", () => {
