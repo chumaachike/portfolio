@@ -475,7 +475,7 @@ footer {
 }
 
 .modal h2 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -484,22 +484,24 @@ footer {
 }
 
 .modal p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
+
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
 }
+
 .modal-header {
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid balck;
+  border-bottom: 1px solid #000;
 }
 
 .modal img {
@@ -707,6 +709,7 @@ footer {
   .border-butom {
     display: none;
   }
+
   .modal-body {
     flex-direction: row;
     gap: 24px;
