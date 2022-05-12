@@ -173,14 +173,8 @@ for (let i = 0; i < projects[6].technologies.length; i += 1) {
 
 btnhead.innerHTML = 'Submit';
 
-for (
-  let projectNumber = 0;
-  projectNumber < projects.length - 1;
-  projectNumber += 1
-) {
-  
+for (let projectNumber = 0;projectNumber < projects.length - 1; projectNumber += 1) {
   // Creating new HTML elements
-
   const itemDiv = document.createElement('div');
   const itemTitle = document.createElement('h3');
   const itemDescription = document.createElement('p');
@@ -206,12 +200,6 @@ for (
     if (modal == null) return;
     modal.classList.add('active');
     overlay.classList.add('active');
-  }
-  
-  function closeModal(modal) {
-    if (modal == null) return;
-    modal.classList.remove('active');
-    overlay.classList.remove('active');
   }
   
   
@@ -263,6 +251,12 @@ document.querySelectorAll('.btn-works').forEach((n) =>
     openModal(modal);
   })
 );
+
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+}
 
 overlay.addEventListener('click', () => {
   const modals = document.querySelectorAll('.modal.active');
