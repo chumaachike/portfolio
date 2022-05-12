@@ -134,9 +134,7 @@ const desc = document.createElement('p')
 const ulhead = document.createElement('ul')
 const btnhead = document.createElement('button')
 const sourceImg = document.createElement('img');
-sourceImg.src = '../images/mouse.png';
 const liveImg = document.createElement('img');
-liveImg.src = '../images/live-icon.png';
 btnhead.type = 'submit'
 
 workSection.appendChild(headingWorks);
@@ -242,7 +240,7 @@ document.querySelectorAll(".btn-works").forEach((n) =>
     imgTag.src = projects[juj]["featuredImage"];
     ulModal.innerHTML = "";
     closeBtn.innerHTML = "&times;";
-    sourceBtn.innerHTML = "See Source";
+    sourceBtn.innerHTML = `See Source`;
     liveBtn.innerHTML = "See Live";
     projects[juj]["technologies"].forEach((tech) => {
       const modalLi = document.createElement("li");
