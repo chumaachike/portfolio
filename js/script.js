@@ -133,6 +133,10 @@ const htitle = document.createElement('h3')
 const desc = document.createElement('p')
 const ulhead = document.createElement('ul')
 const btnhead = document.createElement('button')
+const sourceImg = document.createElement('img');
+sourceImg.src = '../images/mouse.png';
+const liveImg = document.createElement('img');
+liveImg.src = '../images/live-icon.png';
 btnhead.type = 'submit'
 
 workSection.appendChild(headingWorks);
@@ -146,6 +150,8 @@ pit.appendChild(htitle);
 pit.appendChild(desc)
 pit.appendChild(ulhead)
 pit.appendChild(btnhead)
+liveBtn.appendChild(liveImg);
+sourceBtn.appendChild(sourceImg);
 
 
 headingWorks.classList.add('heading-works');
