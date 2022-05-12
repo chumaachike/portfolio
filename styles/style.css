@@ -235,7 +235,8 @@ footer ul {
   color: #091e42;
 }
 
-.works li {
+.works li,
+.modal li {
   margin: 12px 12px 12px 0;
   border: 1px solid #8993a4;
   box-sizing: border-box;
@@ -459,6 +460,99 @@ footer {
   opacity: 0;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #DFE1E6;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #fff;
+  padding: 16px;
+  overflow-y: scroll;
+}
+
+.modal h2 {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+text-align: right;
+}
+
+.modal p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid balck;
+}
+
+.modal img {
+  height: 200px;
+  align-content: center;
+  width: 311px;
+}
+
+.modal-header .modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .modal-button {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  color: #67798E;
+}
+
+.modal-footer {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-footer button {
+  width: 134px;
+}
+
+.modal-body {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 @media screen and (min-width: 768px) {
   .container-full {
     width: 100%;
@@ -612,5 +706,14 @@ footer {
 
   .border-butom {
     display: none;
+  }
+  .modal-body{
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .modal-footer{
+    justify-content: flex-end;
+    gap: 24px;
   }
 }
