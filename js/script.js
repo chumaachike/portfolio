@@ -173,7 +173,7 @@ for (let i = 0; i < projects[6].technologies.length; i += 1) {
 
 btnhead.innerHTML = 'Submit';
 
-for (let projectNumber = 0;projectNumber < projects.length - 1; projectNumber += 1) {
+for (let projectNumber = 0; projectNumber < projects.length - 1; projectNumber += 1) {
   // Creating new HTML elements
   const itemDiv = document.createElement('div');
   const itemTitle = document.createElement('h3');
