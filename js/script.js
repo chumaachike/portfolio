@@ -185,33 +185,33 @@ hamburger.addEventListener('click', () => {
   xxx.classList.toggle('opacity');
 });
 document.querySelectorAll('.nav-link').forEach((n) =>n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-    branding.classList.remove('opacity');
-    xxx.classList.remove('opacity');
-  }));
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+  branding.classList.remove('opacity');
+  xxx.classList.remove('opacity');
+}));
   function openModal(modal) {
     if (modal == null) return;
     modal.classList.add('active');
     overlay.classList.add('active');
   }
 document.querySelectorAll('.btn-works').forEach((n) =>n.addEventListener('click', () => {
-    const classes = n.className.split(' ');
-    const juj = Number(classes[1]);
-    modalTitle.innerHTML = projects[juj].name;
-    modalDes.innerHTML = projects[juj].description;
-    imgTag.src = projects[juj].featuredImage;
-    ulModal.innerHTML = '';
-    closeBtn.innerHTML = '&times;';
-    sourceBtn.innerHTML = 'See Source';
-    liveBtn.innerHTML = 'See Live';
-    projects[juj].technologies.forEach((tech) => {
-      const modalLi = document.createElement('li');
-      modalLi.innerHTML = tech;
-      ulModal.appendChild(modalLi);
-    });
-    openModal(modal);
-  }));
+  const classes = n.className.split(' ');
+  const juj = Number(classes[1]);
+  modalTitle.innerHTML = projects[juj].name;
+  modalDes.innerHTML = projects[juj].description;
+  imgTag.src = projects[juj].featuredImage;
+  ulModal.innerHTML = '';
+  closeBtn.innerHTML = '&times;';
+  sourceBtn.innerHTML = 'See Source';
+  liveBtn.innerHTML = 'See Live';
+  projects[juj].technologies.forEach((tech) => {
+    const modalLi = document.createElement('li');
+    modalLi.innerHTML = tech;
+    ulModal.appendChild(modalLi);
+  });
+  openModal(modal);
+}));
 function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove('active');
