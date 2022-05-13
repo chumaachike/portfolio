@@ -1,13 +1,8 @@
-// declaring the variables
-
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const branding = document.querySelector('.nav-branding');
 const xxx = document.querySelector('.opa');
 const workSection = document.getElementById('portfolio');
-
-// creating elements
-
 const modal = document.createElement('div');
 const modalHeader = document.createElement('div');
 const modalBody = document.createElement('div');
@@ -20,9 +15,6 @@ const sourceBtn = document.createElement('button');
 const imgTag = document.createElement('img');
 const liveBtn = document.createElement('button');
 const modalFooter = document.createElement('div');
-
-// modal data
-
 const projects = [
   {
     cardName: 'card-1',
@@ -95,9 +87,6 @@ const projects = [
     sourceVersion: 'https://github.com/chumaachike/portfolio/',
   },
 ];
-
-// adding classes to modal
-
 modal.classList.add('modal');
 modalHeader.classList.add('modal-header');
 modalBody.classList.add('modal-body');
@@ -108,21 +97,18 @@ modalDes.classList.add('modal-des');
 ulModal.classList.add('flex');
 modalFooter.classList.add('flex');
 modalFooter.classList.add('modal-footer');
-
 document.body.appendChild(modal);
 modal.appendChild(modalHeader);
 modal.appendChild(ulModal);
 modal.appendChild(modalBody);
 modalHeader.appendChild(modalTitle);
 modalHeader.appendChild(closeBtn);
-
 modalBody.appendChild(imgTag);
 modalBody.appendChild(modalDes);
 document.body.appendChild(overlay);
 modal.appendChild(modalFooter);
 modalFooter.appendChild(sourceBtn);
 modalFooter.appendChild(liveBtn);
-
 const headingWorks = document.createElement('div');
 const titleworkss = document.createElement('h2');
 const boderworks = document.createElement('div');
@@ -137,7 +123,6 @@ const btnhead = document.createElement('button');
 const sourceImg = document.createElement('img');
 const liveImg = document.createElement('img');
 btnhead.type = 'submit';
-
 workSection.appendChild(headingWorks);
 headingWorks.appendChild(titleworkss);
 headingWorks.appendChild(boderworks);
@@ -151,7 +136,6 @@ pit.appendChild(ulhead);
 pit.appendChild(btnhead);
 liveBtn.appendChild(liveImg);
 sourceBtn.appendChild(sourceImg);
-
 headingWorks.classList.add('heading-works');
 boderworks.classList.add('border-works');
 main.classList.add('main');
@@ -160,30 +144,22 @@ pit.classList.add('pit');
 ulhead.classList.add('flex');
 btnhead.classList.add('btn-works');
 btnhead.classList.add(`${6}`);
-
 titleworkss.innerHTML = 'My Recent works';
 htitle.innerHTML = projects[6].name;
 desc.innerHTML = projects[6].description;
-
 for (let i = 0; i < projects[6].technologies.length; i += 1) {
   const listItem = document.createElement('li');
   listItem.innerHTML = projects[6].technologies[i];
   ulhead.appendChild(listItem);
 }
-
 btnhead.innerHTML = 'Submit';
-
 for (let projectNumber = 0; projectNumber < projects.length - 1; projectNumber += 1) {
-  // Creating new HTML elements
   const itemDiv = document.createElement('div');
   const itemTitle = document.createElement('h3');
   const itemDescription = document.createElement('p');
   const itemUl = document.createElement('ul');
   const itemBtn = document.createElement('button');
   itemBtn.type = 'submit';
-
-  // Giving classes to elements
-
   itemDiv.classList.add('item');
   itemUl.classList.add('flex');
   itemBtn.classList.add('btn-works');
@@ -193,26 +169,21 @@ for (let projectNumber = 0; projectNumber < projects.length - 1; projectNumber +
   itemDiv.appendChild(itemDescription);
   itemDiv.appendChild(itemUl);
   itemDiv.appendChild(itemBtn);  
-  
   for (let i = 0; i < projects[projectNumber].technologies.length; i += 1) {
     const listItem = document.createElement('li');
     listItem.innerHTML = projects[projectNumber].technologies[i];
     itemUl.appendChild(listItem);
   }
-
-  // Filling the elements information
   itemTitle.innerHTML = projects[projectNumber].name;
   itemDescription.innerHTML = projects[projectNumber].description;
   itemBtn.innerHTML = 'See Project';
 }
-
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
   branding.classList.toggle('opacity');
   xxx.classList.toggle('opacity');
 });
-
 document.querySelectorAll('.nav-link').forEach((n) =>
   n.addEventListener('click', () => {
     hamburger.classList.remove('active');
@@ -221,7 +192,6 @@ document.querySelectorAll('.nav-link').forEach((n) =>
     xxx.classList.remove('opacity');
   })
 );
-
 document.querySelectorAll('.btn-works').forEach((n) =>
   n.addEventListener('click', () => {
     const classes = n.className.split(' ');
