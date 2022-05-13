@@ -184,18 +184,18 @@ hamburger.addEventListener('click', () => {
   branding.classList.toggle('opacity');
   xxx.classList.toggle('opacity');
 });
-document.querySelectorAll('.nav-link').forEach((n) =>n.addEventListener('click', () => {
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
   branding.classList.remove('opacity');
   xxx.classList.remove('opacity');
 }));
-  function openModal(modal) {
-    if (modal == null) return;
-    modal.classList.add('active');
-    overlay.classList.add('active');
-  }
-document.querySelectorAll('.btn-works').forEach((n) =>n.addEventListener('click', () => {
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
+}
+document.querySelectorAll('.btn-works').forEach((n) => n.addEventListener('click', () => {
   const classes = n.className.split(' ');
   const juj = Number(classes[1]);
   modalTitle.innerHTML = projects[juj].name;
