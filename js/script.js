@@ -168,7 +168,7 @@ for (let projectNumber = 0; projectNumber < projects.length - 1; projectNumber +
   itemDiv.appendChild(itemTitle);
   itemDiv.appendChild(itemDescription);
   itemDiv.appendChild(itemUl);
-  itemDiv.appendChild(itemBtn);  
+  itemDiv.appendChild(itemBtn);
   for (let i = 0; i < projects[projectNumber].technologies.length; i += 1) {
     const listItem = document.createElement('li');
     listItem.innerHTML = projects[projectNumber].technologies[i];
@@ -184,16 +184,18 @@ hamburger.addEventListener('click', () => {
   branding.classList.toggle('opacity');
   xxx.classList.toggle('opacity');
 });
-document.querySelectorAll('.nav-link').forEach((n) =>
-  n.addEventListener('click', () => {
+document.querySelectorAll('.nav-link').forEach((n) =>n.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
     branding.classList.remove('opacity');
     xxx.classList.remove('opacity');
-  })
-);
-document.querySelectorAll('.btn-works').forEach((n) =>
-  n.addEventListener('click', () => {
+  }));
+  function openModal(modal) {
+    if (modal == null) return;
+    modal.classList.add('active');
+    overlay.classList.add('active');
+  }
+document.querySelectorAll('.btn-works').forEach((n) =>n.addEventListener('click', () => {
     const classes = n.className.split(' ');
     const juj = Number(classes[1]);
     modalTitle.innerHTML = projects[juj].name;
@@ -201,7 +203,7 @@ document.querySelectorAll('.btn-works').forEach((n) =>
     imgTag.src = projects[juj].featuredImage;
     ulModal.innerHTML = '';
     closeBtn.innerHTML = '&times;';
-    sourceBtn.innerHTML = `See Source`;
+    sourceBtn.innerHTML = 'See Source';
     liveBtn.innerHTML = 'See Live';
     projects[juj].technologies.forEach((tech) => {
       const modalLi = document.createElement('li');
@@ -209,14 +211,7 @@ document.querySelectorAll('.btn-works').forEach((n) =>
       ulModal.appendChild(modalLi);
     });
     openModal(modal);
-  })
-);
-function openModal(modal) {
-  if (modal == null) return;
-  modal.classList.add('active');
-  overlay.classList.add('active');
-}
-
+  }));
 function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove('active');
@@ -233,4 +228,3 @@ closeBtn.addEventListener('click', () => {
   const modal = closeBtn.closest('.modal');
   closeModal(modal);
 });
-
