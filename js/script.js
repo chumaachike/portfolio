@@ -188,20 +188,11 @@ for (let projectNumber = 0; projectNumber < projects.length - 1; projectNumber +
   itemUl.classList.add('flex');
   itemBtn.classList.add('btn-works');
   itemBtn.classList.add(`${projectNumber}`);
-
   workSection.appendChild(itemDiv);
   itemDiv.appendChild(itemTitle);
   itemDiv.appendChild(itemDescription);
   itemDiv.appendChild(itemUl);
-  itemDiv.appendChild(itemBtn);
-
-
-  function openModal(modal) {
-    if (modal == null) return;
-    modal.classList.add('active');
-    overlay.classList.add('active');
-  }
-  
+  itemDiv.appendChild(itemBtn);  
   
   for (let i = 0; i < projects[projectNumber].technologies.length; i += 1) {
     const listItem = document.createElement('li');
@@ -210,7 +201,6 @@ for (let projectNumber = 0; projectNumber < projects.length - 1; projectNumber +
   }
 
   // Filling the elements information
-
   itemTitle.innerHTML = projects[projectNumber].name;
   itemDescription.innerHTML = projects[projectNumber].description;
   itemBtn.innerHTML = 'See Project';
@@ -251,6 +241,11 @@ document.querySelectorAll('.btn-works').forEach((n) =>
     openModal(modal);
   })
 );
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
+}
 
 function closeModal(modal) {
   if (modal == null) return;
