@@ -228,3 +228,12 @@ closeBtn.addEventListener('click', () => {
   const modal = closeBtn.closest('.modal');
   closeModal(modal);
 });
+
+document.getElementById("contact-form").addEventListener("submit", (event) => {
+  const email = document.getElementById("contact-me-email").value;
+  if (email !== email.toLowerCase()) {
+    event.preventDefault();
+   const emailError = document.getElementById('email-error')
+   emailError.classList.add('active')
+  } 
+});
