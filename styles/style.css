@@ -555,6 +555,14 @@ footer {
   pointer-events: all;
 }
 
+.error-message {
+  display: none;
+}
+
+.error-message.active {
+  display: contents;
+}
+
 @media screen and (min-width: 768px) {
   .container-full {
     width: 100%;
