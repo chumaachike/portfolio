@@ -15,26 +15,28 @@ const sourceBtn = document.createElement('button');
 const imgTag = document.createElement('img');
 const liveBtn = document.createElement('button');
 const modalFooter = document.createElement('div');
+const liveLink = document.createElement('a');
+const sourceLink = document.createElement('a');
 const projects = [
   {
     cardName: 'card-1',
-    name: 'Profesional Art Printing Data',
+    name: 'Space Travelers Hub',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!',
-    technologies: ['html', 'bootstrap', 'Ruby'],
+      'This is a booking application that allows people to reserve rockets and book missions to space. The application fetches data from an API then displays it to the user. For futher information read through the ReadMe on the source link',
+    technologies: ['JavaScript', 'React', 'Redux'],
     featuredImage: '../images/ImgPlaceholder.png',
-    liveVersion: 'https://chumaachike.github.io/portfolio/',
-    sourceVersion: 'https://github.com/chumaachike/portfolio/',
+    liveVersion: 'https://effervescent-choux-235521.netlify.app/',
+    sourceVersion: 'https://github.com/chumaachike/reactproject.git',
   },
   {
     cardName: 'card-2',
-    name: 'Profesional Art Printing Data',
+    name: 'Financial Times Data',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!',
-    technologies: ['html', 'bootstrap', 'Ruby'],
+      'Financial data app that analyses the portfolio of all the companies in the NASDAQ and DOW Jones exchange. The application fetches data from an API then displays it to the user. For futher information read through the ReadMe on the source link',
+    technologies: ['JavaScript', 'React', 'Redux'],
     featuredImage: '../images/ImgPlaceholder.png',
-    liveVersion: 'https://chumaachike.github.io/portfolio/',
-    sourceVersion: 'https://github.com/chumaachike/portfolio/',
+    liveVersion: 'https://regal-peony-e39c9e.netlify.app/',
+    sourceVersion: 'https://github.com/chumaachike/reactproject.git',
   },
   {
     cardName: 'card-3',
@@ -107,8 +109,10 @@ modalBody.appendChild(imgTag);
 modalBody.appendChild(modalDes);
 document.body.appendChild(overlay);
 modal.appendChild(modalFooter);
-modalFooter.appendChild(sourceBtn);
-modalFooter.appendChild(liveBtn);
+modalFooter.appendChild(sourceLink);
+modalFooter.appendChild(liveLink);
+sourceLink.appendChild(sourceBtn);
+liveLink.appendChild(liveBtn);
 const headingWorks = document.createElement('div');
 const titleworkss = document.createElement('h2');
 const boderworks = document.createElement('div');
@@ -203,6 +207,8 @@ document.querySelectorAll('.btn-works').forEach((n) => n.addEventListener('click
   imgTag.src = projects[juj].featuredImage;
   ulModal.innerHTML = '';
   closeBtn.innerHTML = '&times;';
+  liveLink.setAttribute("href", projects[juj].liveVersion);
+  sourceLink.setAttribute("href", projects[juj].sourceVersion);
   sourceBtn.innerHTML = 'See Source';
   liveBtn.innerHTML = 'See Live';
   projects[juj].technologies.forEach((tech) => {
