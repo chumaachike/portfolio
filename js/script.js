@@ -207,8 +207,8 @@ document.querySelectorAll('.btn-works').forEach((n) => n.addEventListener('click
   imgTag.src = projects[juj].featuredImage;
   ulModal.innerHTML = '';
   closeBtn.innerHTML = '&times;';
-  liveLink.setAttribute("href", projects[juj].liveVersion);
-  sourceLink.setAttribute("href", projects[juj].sourceVersion);
+  liveLink.setAttribute('href', projects[juj].liveVersion);
+  sourceLink.setAttribute('href', projects[juj].sourceVersion);
   sourceBtn.innerHTML = 'See Source';
   liveBtn.innerHTML = 'See Live';
   projects[juj].technologies.forEach((tech) => {
