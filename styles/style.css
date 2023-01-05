@@ -675,7 +675,7 @@ footer {
     float: right;
     width: 50%;
   }
-  
+
   input[name="user_fullname"] {
     display: none;
   }

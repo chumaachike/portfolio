@@ -133,8 +133,8 @@ btnhead.classList.add(`${6}`);
 titleworkss.innerHTML = 'My Recent works';
 htitle.innerHTML = projects[4].name;
 desc.innerHTML = projects[4].description;
-meduimLink.setAttribute('href', 'https://medium.com/@edwardachike')
-meduimLink.setAttribute('target', "_blank");
+meduimLink.setAttribute('href', 'https://medium.com/@edwardachike');
+meduimLink.setAttribute('target', '_blank');
 for (let i = 0; i < projects[4].technologies.length; i += 1) {
   const listItem = document.createElement('li');
   listItem.innerHTML = projects[4].technologies[i];
@@ -192,9 +192,9 @@ document.querySelectorAll('.btn-works').forEach((n) => n.addEventListener('click
   ulModal.innerHTML = '';
   closeBtn.innerHTML = '&times;';
   liveLink.setAttribute('href', projects[juj].liveVersion);
-  liveLink.setAttribute('target', "_blank");
+  liveLink.setAttribute('target', '_blank');
   sourceLink.setAttribute('href', projects[juj].sourceVersion);
-  sourceLink.setAttribute('target', "_blank");
+  sourceLink.setAttribute('target', '_blank');
   sourceBtn.innerHTML = 'See Source';
   liveBtn.innerHTML = 'See Live';
   projects[juj].technologies.forEach((tech) => {
