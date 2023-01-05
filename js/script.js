@@ -17,6 +17,7 @@ const liveBtn = document.createElement('button');
 const modalFooter = document.createElement('div');
 const liveLink = document.createElement('a');
 const sourceLink = document.createElement('a');
+const meduimLink = document.createElement('a');
 const projects = [
   {
     cardName: 'card-1',
@@ -40,50 +41,30 @@ const projects = [
   },
   {
     cardName: 'card-3',
-    name: 'Profesional Art Printing Data',
+    name: 'Calculator App',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!',
-    technologies: ['html', 'bootstrap', 'Ruby'],
+      'It features all the basic functions you would expect, such as addition, subtraction, multiplication, and division, as well as more advanced functions like trigonometric and logarithmic calculations. The user interface is intuitive and easy to use, with clear buttons and display.',
+    technologies: ['html', 'CSS', 'React', 'JavaScript'],
     featuredImage: '../images/ImgPlaceholder.png',
-    liveVersion: 'https://chumaachike.github.io/portfolio/',
-    sourceVersion: 'https://github.com/chumaachike/portfolio/',
+    liveVersion: 'https://tourmaline-praline-a8b15b.netlify.app/',
+    sourceVersion: 'https://github.com/chumaachike/math-magicians.git',
   },
   {
     cardName: 'card-4',
-    name: 'Profesional Art Printing Data',
+    name: 'To do List application',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!',
-    technologies: ['html', 'bootstrap', 'Ruby'],
+      'A simple to do list web application. This application manages the activities a person is meant to perform!',
+    technologies: ['html', 'CSS', 'JavaScript'],
     featuredImage: '../images/ImgPlaceholder.png',
-    liveVersion: 'https://chumaachike.github.io/portfolio/',
-    sourceVersion: 'https://github.com/chumaachike/portfolio/',
-  },
-  {
-    cardName: 'card-5',
-    name: 'Profesional Art Printing Data',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    featuredImage: '../images/ImgPlaceholder.png',
-    liveVersion: 'https://chumaachike.github.io/portfolio/',
-    sourceVersion: 'https://github.com/chumaachike/portfolio/',
-  },
-  {
-    cardName: 'card-6',
-    name: 'Profesional Art Printing Data',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    featuredImage: '../images/ImgPlaceholder.png',
-    liveVersion: 'https://chumaachike.github.io/portfolio/',
+    liveVersion: '',
     sourceVersion: 'https://github.com/chumaachike/portfolio/',
   },
   {
     cardName: 'card-7',
     name: 'Multi-Post Stories',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!',
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+      'In my blog, I document my journey as a full stack developer. I talk about the challenges I have faced and the lessons I have learned along the way. I also share tips and resources that have helped me improve my skills and become a better developer. Through my blog, I hope to inspire others who are also interested in pursuing a career in full stack development. I believe that by sharing my experiences, I can help others navigate their own path towards a fulfilling and successful career in tech.',
+    technologies: ['css', 'html', 'bootstrap', 'Ruby', 'JavaScript', 'React'],
     featuredImage: '../images/ImgPlaceholder.png',
     liveVersion: 'https://chumaachike.github.io/portfolio/',
     sourceVersion: 'https://github.com/chumaachike/portfolio/',
@@ -137,7 +118,8 @@ main.appendChild(pit);
 pit.appendChild(htitle);
 pit.appendChild(desc);
 pit.appendChild(ulhead);
-pit.appendChild(btnhead);
+pit.appendChild(meduimLink);
+meduimLink.appendChild(btnhead);
 liveBtn.appendChild(liveImg);
 sourceBtn.appendChild(sourceImg);
 headingWorks.classList.add('heading-works');
@@ -149,14 +131,16 @@ ulhead.classList.add('flex');
 btnhead.classList.add('btn-works');
 btnhead.classList.add(`${6}`);
 titleworkss.innerHTML = 'My Recent works';
-htitle.innerHTML = projects[6].name;
-desc.innerHTML = projects[6].description;
-for (let i = 0; i < projects[6].technologies.length; i += 1) {
+htitle.innerHTML = projects[4].name;
+desc.innerHTML = projects[4].description;
+meduimLink.setAttribute('href', 'https://medium.com/@edwardachike')
+meduimLink.setAttribute('target', "_blank");
+for (let i = 0; i < projects[4].technologies.length; i += 1) {
   const listItem = document.createElement('li');
-  listItem.innerHTML = projects[6].technologies[i];
+  listItem.innerHTML = projects[4].technologies[i];
   ulhead.appendChild(listItem);
 }
-btnhead.innerHTML = 'Submit';
+btnhead.innerHTML = 'View blog';
 for (let projectNumber = 0; projectNumber < projects.length - 1; projectNumber += 1) {
   const itemDiv = document.createElement('div');
   const itemTitle = document.createElement('h3');
@@ -208,7 +192,9 @@ document.querySelectorAll('.btn-works').forEach((n) => n.addEventListener('click
   ulModal.innerHTML = '';
   closeBtn.innerHTML = '&times;';
   liveLink.setAttribute('href', projects[juj].liveVersion);
+  liveLink.setAttribute('target', "_blank");
   sourceLink.setAttribute('href', projects[juj].sourceVersion);
+  sourceLink.setAttribute('target', "_blank");
   sourceBtn.innerHTML = 'See Source';
   liveBtn.innerHTML = 'See Live';
   projects[juj].technologies.forEach((tech) => {

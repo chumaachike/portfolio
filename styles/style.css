@@ -629,10 +629,6 @@ footer {
     grid-column: 1/4;
   }
 
-  .item button {
-    display: none;
-  }
-
   .border-works {
     margin: auto 0;
   }
@@ -679,24 +675,7 @@ footer {
     float: right;
     width: 50%;
   }
-
-  .item:hover {
-    background-image: url("../images/portfhover.png");
-    position: relative;
-  }
-
-  .item:hover ul,
-  .item:hover p,
-  .item:hover h3 {
-    display: none;
-  }
-
-  .item:hover > .btn-works {
-    display: block;
-    position: absolute;
-    bottom: 0;
-  }
-
+  
   input[name="user_fullname"] {
     display: none;
   }
