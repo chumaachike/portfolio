@@ -651,8 +651,8 @@ header {
     text-decoration: none;
   }
 
-  .menu-opt-cont:hover {
-    border: 1px solid #36b37e;
+  #blog-button:hover {
+    cursor: pointer;
   }
 
   .menu-opt {
