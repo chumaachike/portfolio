@@ -299,6 +299,13 @@ header {
   text-decoration: none;
 }
 
+#blog-button {
+  background-color: #36b37f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
 .access-button {
   display: inline-block;
   box-sizing: border-box;
@@ -644,8 +651,8 @@ header {
     text-decoration: none;
   }
 
-  .menu-opt-cont:hover {
-    border: 1px solid #36b37e;
+  #blog-button:hover {
+    cursor: pointer;
   }
 
   .menu-opt {
