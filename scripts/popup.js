@@ -12,7 +12,7 @@ const works = [
     description: 'It features all the basic functions you would expect, such as addition, subtraction, multiplication, and division, as well as more advanced functions like trigonometric and logarithmic calculations. The user interface is intuitive and easy to use, with clear buttons and display.',
     imageLocation: './images/calculator.png',
     technologies: ['HTML', 'SCSS', 'JavaScript', 'Webpack'],
-    live: 'https://stunning-ganache-ef762a.netlify.app/',
+    live: 'https://tourmaline-praline-a8b15b.netlify.app/',
     source: 'https://github.com/Bushido-brown/Tv-shows',
   },
   {
@@ -26,7 +26,7 @@ const works = [
 
   {
     name: 'Space Travelers Hub',
-    description: 'A JavaScript project for a Leaderboard list app, using webpack and ES6 features, notably modules. This application records scores for a game for different players',
+    description: 'A JavaScript project for a Leaderboard list app, using webpack and ES6 features, notably modules. This application records scores for a game for different players.',
     imageLocation: './images/rockets.png',
     technologies: ['JavaScript', 'React', 'Redux'],
     live: 'https://effervescent-choux-235521.netlify.app/',
