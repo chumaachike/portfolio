@@ -1,5 +1,21 @@
 const works = [
   {
+    name: 'CHU-BAY E-commerce',
+    description: 'Developed a full-stack e-commerce application using Spring Boot (Java) for backend services and React with Redux for frontend state management, implementing secure user authentication (JWT), RESTful APIs, and optimizing data handling for a seamless shopping experience.',
+    imageLocation: './images/banner.jpg',
+    technologies: ['SpringBoot', 'React', 'Postgres'],
+    live: 'https://brilliant-pie-dbaf1b.netlify.app/',
+    source: 'https://github.com/chumaachike/ecomm-frontend',
+  },
+  {
+    name: 'Hotel fur Pets',
+    description: 'This is a web application where owners can reserve temporary accomodation for their pets while they are unavailable to tend to the pet.',
+    imageLocation: './images/hotel-fur-pets.jpg',
+    technologies: ['Javascript', 'React', 'Redux', 'RoR'],
+    live: 'https://dogs-appointment-chumaachike.vercel.app/',
+    source: 'https://github.com/chumaachike/dogs_appointment.git',
+  },
+  {
     name: 'To-do List',
     description: 'A to-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. A simple website that allows users to create a To-do list.',
     imageLocation: './images/to_do_list.png',
@@ -31,23 +47,6 @@ const works = [
     technologies: ['JavaScript', 'React', 'Redux'],
     live: 'https://effervescent-choux-235521.netlify.app/',
     source: 'https://github.com/chumaachike/reactproject.git',
-  },
-  {
-    name: '2020 African Cultural Festival',
-    description: 'An online website for a festival in Africa. Designed by the guidelines provided by the Microverse (Cindy Shin Design).',
-    imageLocation: './images/Town-hall.png',
-    technologies: ['HTML5', 'CSS3', 'JavaScript'],
-    live: 'https://chumaachike.github.io/CapstoneProject1/',
-    source: 'https://github.com/chumaachike/CapstoneProject1',
-  },
-
-  {
-    name: 'Hotel fur Pets',
-    description: 'This is a web application where owners can reserve temporary accomodation for their pets while they are unavailable to tend to the pet.',
-    imageLocation: './images/hotel-fur-pets.jpg',
-    technologies: ['Javascript', 'React', 'Redux', 'RoR'],
-    live: 'https://dogs-appointment-chumaachike.vercel.app/',
-    source: 'https://github.com/chumaachike/dogs_appointment.git',
   },
 ];
 
